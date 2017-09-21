@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  h2 Example Usage
+  p Enter search term after "search/" and set offset to paginate through results.
+  code https://bingjson.herokuapp.com/search/puppies?offset=1
+  br
+  code https://bingjson.herokuapp.com/search/kittens?offset=2
+  p Go here to get the latest list of search terms
+  code https://bingjson.herokuapp.com/latest

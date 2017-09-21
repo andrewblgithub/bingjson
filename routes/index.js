@@ -54,7 +54,7 @@ router.get('/latest', function(req, res) {
     if (err) throw err;
     console.log("Connected");
     var imagesearchdb = db.collection('imagesearchdb');
-    imagesearchdb.find({ _id: 0 }).sort({ time: -1 }).limit(10).toArray(function(err, doc) {
+    imagesearchdb.find().sort({ time: -1 }).limit(10).toArray(function(err, doc) {
       res.json(doc);
       db.close();
     });

@@ -8,7 +8,7 @@ require('dotenv').config();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Image Search API Abstraction' });
+  res.render('index', { title: 'Bing Image Search Abstraction Layer' });
 });
 
 router.get('/search/:searchTerm', function(req, res) {

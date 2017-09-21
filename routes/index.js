@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var mongo = require('mongodb').MongoClient();
-var mongoUrl = "mongodb://localhost:27017/imagesearchapi";
+//var mongoUrl = "mongodb://localhost:27017/imagesearchapi";
+var mongoUrl = "mongodb://bingjson:bingjson@ds147034.mlab.com:47034/heroku_p7qq60lz"
 var tiny = require('tiny-json-http');
 require('dotenv').config();
 
